@@ -6,11 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 18:40:22 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 20:20:37 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/09/14 20:47:45 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

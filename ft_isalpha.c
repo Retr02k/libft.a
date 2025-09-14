@@ -6,11 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 16:29:28 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 16:35:13 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/09/14 19:49:20 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);

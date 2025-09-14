@@ -6,11 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 18:03:00 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 18:38:33 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/09/14 19:49:18 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

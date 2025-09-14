@@ -6,11 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 16:40:39 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 17:38:36 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/09/14 19:49:19 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
