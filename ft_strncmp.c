@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 20:01:32 by psilva-p         ###   ########.fr       */
+/*   Created: 2025/09/14 19:59:06 by psilva-p          #+#    #+#             */
+/*   Updated: 2025/09/14 21:39:05 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <stdio.h>
-# include <unistd.h>
-# include <stdlib.h>
+#include "libft.h"
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
-size_t	ft_strlen(const	char	*str);
-int strncmp(const char s1, const char s2, size_t n);
-int	tolower(int	c);
-int	toupper(int	c);
+int strncmp(const char *s1, const char *s2, size_t n)
+{
+	size_t	i;
 
-
-
-#endif
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (i < n && (s1[i] || s2[i]))
+	{
+		if (s1[i] != s2[i])
+			return ((unsigned	char)s1[i] - (unsigned	char)s2[i]);
+		i++;
+	}
+	return (0);
+}
