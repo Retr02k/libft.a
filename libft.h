@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 22:46:26 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/09/15 15:42:23 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+int	atoi(const char	*str);
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
 int	ft_isascii(int c);
