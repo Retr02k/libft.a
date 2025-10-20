@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/20 19:47:28 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/20 20:20:18 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int	ft_isalpha(int c);
 int	ft_isascii(int c);
 int	ft_isdigit(int c);
 int	ft_isprint(int c);
+const char	*ft_strchr(const char	*s, int	c);
 size_t	ft_strlcat(char	*dst, const char	*src, size_t	size);
 size_t ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const	char	*str);

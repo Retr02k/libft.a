@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 19:52:38 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/20 19:52:39 by psilva-p         ###   ########.fr       */
+/*   Created: 2025/10/20 19:53:46 by psilva-p          #+#    #+#             */
+/*   Updated: 2025/10/20 20:19:54 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-int strncmp(const char *s1, const char *s2, size_t n)
+const char	*ft_strchr(const char	*s, int	c)
 {
-	size_t	i;
-
-	i = 0;
-	if (n == 0)
-		return (0);
-	while (i < n && (s1[i] || s2[i]))
+	while (*s)
 	{
-		if (s1[i] != s2[i])
-			return ((unsigned	char)s1[i] - (unsigned	char)s2[i]);
-		i++;
+		if (*s == (char) c)
+			return (s);
+		s++;
 	}
 	return (0);
 }
+
+// int main()
+// {
+// 	char	str[] = "hello world!";
+// 	int		i = 't';
+
+// 	printf("%s\n", ft_strchr(str, i));
+// }
