@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/15 15:42:23 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/20 19:47:28 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,18 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-int	atoi(const char	*str);
+int	ft_atoi(const char	*str);
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
 int	ft_isascii(int c);
 int	ft_isdigit(int c);
 int	ft_isprint(int c);
-size_t strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char	*dst, const char	*src, size_t	size);
+size_t ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const	char	*str);
-int strncmp(const char s1, const char s2, size_t n);
-int	tolower(int	c);
-int	toupper(int	c);
+int ft_strncmp(const char s1, const char s2, size_t n);
+int	ft_tolower(int	c);
+int	ft_toupper(int	c);
 
 
 
