@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/21 16:37:19 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/21 19:04:30 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,14 @@
 # include <stdlib.h>
 
 int	ft_atoi(const char	*str);
+void	ft_bzero(void	*s, size_t	n);
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
 int	ft_isascii(int c);
 int	ft_isdigit(int c);
 int	ft_isprint(int c);
+void *ft_memcpy(void *dest, const void *src, size_t n);
+void *ft_memset(void *s, int c, size_t n);
 const char	*ft_strchr(const char	*s, int	c);
 size_t	ft_strlcat(char	*dst, const char	*src, size_t	size);
 size_t ft_strlcpy(char *dst, const char *src, size_t size);
