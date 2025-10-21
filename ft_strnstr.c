@@ -1,38 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 14:16:52 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/21 14:28:12 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/21 16:37:02 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include <string.h>
 
-const char	*ft_strstr(const char	*haystack, const char	*needle)
+const char *ft_strnstr(const char *big, const char *little, size_t len)
 {
-	while (*haystack)
+	size_t i;
+	size_t j;
+
+	if (!*little)
+		return (big);
+	i = 0;
+	while (i < len && big[i])
 	{
-		if (*haystack == *needle)
-			return (needle);
-		haystack++;
+		j = 0;
+		while (i + j < len && big[i + j] && little[j] && big[i + j] == little[j])
+			j++;
+		if (little[j] == '\0')
+			return (&big[i]);
+		i++;
 	}
 	return (0);
 }
 
-int main()
-{
-	char haystack[] = "hello world, how are you?";
-	char needle[] = "how";
+// int main()
+// {
+// 	char big[] = "hello world, how are you howl?";
+// 	char little[] = "world";
+// 	size_t i = 3;
 
-	char haystack2[] = "hello world, how are you?";
-	char needle2[] = "how";
-
-	printf("mine: %s\n", ft_strstr(haystack, needle));
-	printf("original: %s\n", strstr(haystack2, needle2));
-}
+// 	printf("%s\n", ft_strnstr(big, little, i));
+// }
