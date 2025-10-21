@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 16:58:08 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/20 19:46:42 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:38:58 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ size_t	ft_strlcat(char	*dst, const char	*src, size_t	size)
 /*
 int main()
 {
-	char s1[20] = "world";
-	char s2[] = "hello";
+	char s1[20] = "hello";
+	char s2[] = "world";
 
-	char s3[20] = "world";
-	char s4[] = "hello";
+	char s3[20] = "hello";
+	char s4[] = "world";
 	int size = 10;
 
 	printf("mine: %li\n", ft_strlcat(s1, s2, size));
