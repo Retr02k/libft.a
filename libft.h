@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/22 18:37:28 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:04:59 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlen(const	char	*str);
 int			ft_strncmp(const char s1, const char s2, size_t n);
 const char	*ft_strrchr(const char	*s, int c);
+char		*ft_substr(char const	*s, unsigned int	start, size_t	len);
 const char	*ft_strnstr(const char	*haystack, const char	*needle);
 int			ft_tolower(int	c);
 int			ft_toupper(int	c);
