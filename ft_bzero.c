@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:40:36 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/21 19:43:07 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:27:14 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,24 +27,24 @@ void	ft_bzero(void	*s, size_t	n)
 	}
 }
 
-int main()
-{
-	char mem[SIZE];
-	int ctd = 0;
+// int main()
+// {
+// 	char mem[SIZE];
+// 	int ctd = 0;
 
-	while (ctd < SIZE) {
-		mem[ctd] = ctd;
-		ctd++;
-	}
-	ctd = 0;
-	while (ctd < SIZE) {
-		printf("c[%d] = %d\n",ctd, (int)mem[ctd]);
-		ctd++;
-	}
-	ctd = 0;
-	ft_bzero(mem, SIZE);
-	while (ctd < SIZE) {
-		printf("c[%d] = %d\n",ctd, (int)mem[ctd]);
-		ctd++;
-	}
-}
+// 	while (ctd < SIZE) {
+// 		mem[ctd] = ctd;
+// 		ctd++;
+// 	}
+// 	ctd = 0;
+// 	while (ctd < SIZE) {
+// 		printf("c[%d] = %d\n",ctd, (int)mem[ctd]);
+// 		ctd++;
+// 	}
+// 	ctd = 0;
+// 	ft_bzero(mem, SIZE);
+// 	while (ctd < SIZE) {
+// 		printf("c[%d] = %d\n",ctd, (int)mem[ctd]);
+// 		ctd++;
+// 	}
+// }

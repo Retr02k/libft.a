@@ -6,21 +6,49 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:08:42 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/22 16:25:29 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/22 18:23:09 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "limits.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdint.h>
+#define SIZE 10
 
 void	*ft_calloc(size_t	nmemb, size_t	size)
 {
-	void *mem;
+	size_t	total;
+	void	*mem;
 	
-	mem = malloc(nmemb * size);
+	if (nmemb && size && nmemb > SIZE_MAX / size)
+		return (NULL);
+	total = nmemb * size;
+	mem = malloc(total);
 	if (!mem)
 		return (NULL);
-	if (size && nmemb > __SIZE_MAX__ / size)
-		return (NULL);
-	
+	if (total)
+		ft_bzero(mem, total);
+	return (mem);
 }
+
+// int main()
+// {
+// 	size_t	n = 5;
+// 	size_t	i = 0;
+// 	int *arr = ft_calloc(n, sizeof *arr);
+
+// 	if (arr == NULL)
+// 	{
+// 		printf("Memory allocation failed\n");
+// 		return (1);
+// 	}
+// 	i = 0;
+// 	while (i < n)
+// 	{
+// 		printf("arr[%lu] = %d\n", i, arr[i]);
+// 		i++;
+// 	}
+// 	free(arr);
+// 	return (0);
+// }
