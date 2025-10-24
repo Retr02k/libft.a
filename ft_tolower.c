@@ -6,11 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 20:53:13 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 20:54:35 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/24 20:05:15 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	tolower(int	c)
+int	ft_tolower(int	c)
 {
 	if (c >= 'a' && c <= 'Z')
 		c += 32;

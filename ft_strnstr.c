@@ -6,20 +6,20 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 14:16:52 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/22 20:04:11 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/24 20:02:56 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-const char *ft_strnstr(const char *big, const char *little, size_t len)
+char *ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t i;
 	size_t j;
 
 	if (!*little)
-		return (big);
+		return ((char *)big);
 	i = 0;
 	while (i < len && big[i])
 	{
@@ -27,7 +27,7 @@ const char *ft_strnstr(const char *big, const char *little, size_t len)
 		while (i + j < len && big[i + j] && little[j] && big[i + j] == little[j])
 			j++;
 		if (little[j] == '\0')
-			return (&big[i]);
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (0);

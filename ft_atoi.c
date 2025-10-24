@@ -6,11 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 15:11:19 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/15 15:41:16 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/24 20:11:37 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char	*str)
+int	ft_atoi(const char	*str)
 {
 	int	sign;
 	int	result;
