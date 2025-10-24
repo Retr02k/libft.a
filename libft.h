@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/22 20:04:59 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/24 16:44:54 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void		*ft_memcpy(void *dest, const void *src, size_t n);
 void		*ft_memset(void *s, int c, size_t n);
 const char	*ft_strchr(const char	*s, int	c);
 char		*ft_strdup(const char	*s);
+char		*ft_strjoin(const char	*s1, const char*s2);
 size_t		ft_strlcat(char	*dst, const char	*src, size_t	size);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlen(const	char	*str);
