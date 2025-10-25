@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/24 20:14:23 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/25 21:47:21 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int			ft_isdigit(int c);
 int			ft_isprint(int c);
 void		*ft_memcpy(void *dest, const void *src, size_t n);
 void		*ft_memset(void *s, int c, size_t n);
+char	**ft_split(char const *s, char c);
 const char	*ft_strchr(const char	*s, int	c);
 char		*ft_strdup(const char	*s);
 char		*ft_strjoin(const char	*s1, const char*s2);
