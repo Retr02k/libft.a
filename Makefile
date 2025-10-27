@@ -111,6 +111,7 @@ run:
 
 clean:
 	rm -fr *.o
+	rm -fr ./a.out
 
 fclean: clean
 	rm -fr libft.a

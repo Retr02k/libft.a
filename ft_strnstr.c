@@ -6,12 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 14:16:52 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/24 20:02:56 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:41:23 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {

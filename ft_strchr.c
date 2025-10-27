@@ -6,12 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 19:53:46 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/20 20:19:54 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:41:12 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 const char	*ft_strchr(const char	*s, int	c)
 {

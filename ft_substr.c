@@ -6,37 +6,39 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 18:52:13 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/25 21:39:12 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:41:01 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const	*s, unsigned int	start, size_t	len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int	i;
-	size_t			sub_len;
-	char			*sub_str;
+	size_t	length;
+	size_t	available;
+	size_t	copy_len;
+	size_t	i;
+	char	*sub;
 
-	i = 0;
 	if (!s)
 		return (NULL);
-	while (i < start)
-		i++;
-	if (i <= len)
-		sub_len = (len - i);
-	else
-		sub_len = 0;
-	sub_str = (char *)ft_calloc((sub_len + 1), sizeof(char));
-	if (!sub_str)
+	length = ft_strlen(s);
+	if (start >= length)
+		return ((char *)ft_calloc(1, sizeof(char)));
+	available = length - start;
+	copy_len = len;
+	if (copy_len > available)
+		copy_len = available;
+	sub = (char *)ft_calloc(copy_len + 1, sizeof(char));
+	if (!sub)
 		return (NULL);
 	i = 0;
-	while (s[i] && i < sub_len)
+	while (i < copy_len)
 	{
-		sub_str[i] = s[start + i];
+		sub[i] = s[start + i];
 		i++;
 	}
-	return (sub_str);	
+	return (sub);
 }
 
 // int main()

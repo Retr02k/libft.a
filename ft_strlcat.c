@@ -6,13 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 16:58:08 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/21 14:38:58 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:41:17 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 size_t	ft_strlcat(char	*dst, const char	*src, size_t	size)
 {

@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:48:01 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/24 20:09:37 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:18:08 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 {
 	size_t	start;
 	size_t	end;
-	size_t	lenght;
+	size_t	length;
 	char	*trm_str;
 
 	if (!s1 || !set)
@@ -38,17 +38,17 @@ char	*ft_strtrim(const char *s1, const char *set)
 		start++;
 	while (end > start && ft_c_present(set, &s1[end - 1]))
 		end--;
-	lenght = (end - start) + 1;
-	trm_str = (char *)ft_calloc(lenght, sizeof(char));
-	ft_strlcpy(trm_str, &s1[start], lenght);
+	length = (end - start) + 1;
+	trm_str = (char *)ft_calloc(length, sizeof(char));
+	ft_strlcpy(trm_str, &s1[start], length);
 	return (trm_str);
 }
 
-int main()
-{
-	char	s1[] = "llllHello World!lll";
-	char	set[] = "l";
-	char	*str = ft_strtrim(s1, set);
-	printf("%s\n", str);
-	free(str);
-}
+// int main()
+// {
+// 	char	s1[] = "llllHello World!lll";
+// 	char	set[] = "l";
+// 	char	*str = ft_strtrim(s1, set);
+// 	printf("%s\n", str);
+// 	free(str);
+// }

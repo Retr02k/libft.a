@@ -6,14 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:08:42 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/24 16:29:43 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:41:00 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdint.h>
 #define SIZE 10
 
 void	*ft_calloc(size_t	nmemb, size_t	size)
