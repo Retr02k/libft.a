@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 16:41:52 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/27 18:45:59 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/28 14:27:38 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,61 +44,72 @@ void	*ft_free(char **s, size_t size)
 	return (NULL);
 }
 
+int	word_alloc(const char *s, char c, char **result)
+{
+	size_t	i;
+	size_t	j;
+	size_t	word_len;
+
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		if (!s[i])
+			break ;
+		word_len = 0;
+		while (s[i + word_len] && s[i + word_len] != c)
+			word_len++;
+		result[j] = ft_substr(s, i, word_len);
+		if (!result[j])
+		{
+			ft_free(result, j);
+			return (-1);
+		}
+		j++;
+		i += word_len;
+	}
+	return (1);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
-	size_t	word;
-	size_t	i;
-	size_t	j;
 
 	if (!s)
 		return (NULL);
 	result = (char **)ft_calloc((word_count(s, c) + 1), sizeof(char *));
 	if (!result)
 		return (NULL);
-	i = 0;
-	j = 0;
-	while(s[i])
-	{
-		if (s[i] != c)
-		{
-			word = 0;
-			while (s[i + word] && s[i + word] != c)
-				word++;
-			result[j] = ft_substr(s, i, word);
-			if (!result[j])
-				return(ft_free(result, j));
-			j++;
-			i += word;
-		}
-		else
-			i++;
-	}
+	if (word_alloc(s, c, result) == -1)
+		return (NULL);
 	return (result);
 }
-
-// int main()
-// {
-// 	char	s[] = "   Hello World!  ";
-// 	char	c = ' ';
-// 	char	**result;
-// 	int		i;
+/*
+int main()
+{
+	char	s[] = "   Hello World!  ";
+	char	c = ' ';
+	char	**result;
+	int		i;
 	
-// 	result = ft_split(s, c);
-// 	if (!result)
-// 		return (1);
+	result = ft_split(s, c);
+	if (!result)
+		return (1);
 	
-// 	i = 0;
-// 	while (result[i])
-// 	{
-// 		printf("Word %d: '%s'\n", i, result[i]);
-// 		i++;
-// 	}
+	i = 0;
+	while (result[i])
+	{
+		printf("Word %d: '%s'\n", i, result[i]);
+		i++;
+	}
 	
-// 	i = 0;
-// 	while (result[i])
-// 		free(result[i++]);
-// 	free(result);
+	i = 0;
+	while (result[i])
+		free(result[i++]);
+	free(result);
 	
-// 	return (0);
-// }
+	return (0);
+}
+*/
