@@ -6,13 +6,13 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 16:41:52 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/28 14:27:38 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:19:45 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	word_count(const char *s, char c)
+static size_t	word_count(const char *s, char c)
 {
 	size_t	count;
 	int		in_word;
@@ -33,7 +33,7 @@ size_t	word_count(const char *s, char c)
 	return (count);
 }
 
-void	*ft_free(char **s, size_t size)
+static void	*ft_free(char **s, size_t size)
 {
 	size_t	counter;
 
@@ -44,7 +44,7 @@ void	*ft_free(char **s, size_t size)
 	return (NULL);
 }
 
-int	word_alloc(const char *s, char c, char **result)
+static int	word_alloc(const char *s, char c, char **result)
 {
 	size_t	i;
 	size_t	j;

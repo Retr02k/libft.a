@@ -6,13 +6,13 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:48:01 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/27 16:18:08 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:20:52 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_c_present(const char *s, const char *c)
+static int	ft_c_present(const char *s, const char *c)
 {
 	while (*s)
 	{
