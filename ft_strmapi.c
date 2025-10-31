@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 17:09:45 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 18:08:36 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 18:51:22 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	char	*str;
 
 	if (!s || !f)
-		return(NULL);
+		return (NULL);
 	i = 0;
 	size = ft_strlen(s);
 	str = (char *)ft_calloc(size + 1, sizeof(char));
