@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:08:42 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/27 16:41:00 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:51:58 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_calloc(size_t	nmemb, size_t	size)
 {
 	size_t	total;
 	void	*mem;
-	
+
 	if (nmemb && size && nmemb > SIZE_MAX / size)
 		return (NULL);
 	total = nmemb * size;

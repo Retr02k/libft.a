@@ -6,18 +6,19 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:40:36 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/27 16:40:55 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:49:21 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #define SIZE 10
-void	ft_bzero(void	*s, size_t	n)
+
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*p;
 	size_t			i;
 
-	p = (unsigned char	*)s;
+	p = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{

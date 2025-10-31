@@ -6,11 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 20:36:36 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/09/14 19:53:21 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:42:47 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(int	c)
+char	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c -= 32;

@@ -6,20 +6,20 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 19:04:58 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/22 17:26:57 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:51:47 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #define SIZE 10
 
-void	*ft_memmove(void	*dest, const void	*src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;
 
 	if (!dest && !src)
-		return(NULL);
+		return (NULL);
 	d = (unsigned char *) dest;
 	s = (unsigned char *) src;
 	if (d > s)

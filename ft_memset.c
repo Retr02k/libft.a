@@ -6,13 +6,14 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:38:29 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/22 19:27:36 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:48:51 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #define SIZE 10
-void *ft_memset(void *s, int c, size_t n)
+
+void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	*p;

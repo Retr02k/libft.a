@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 18:25:25 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/22 18:37:01 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:52:12 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strdup(const char	*s)
 {
 	char	*str;
-	size_t		len;
-	size_t		i;
+	size_t	len;
+	size_t	i;
 
 	len = ft_strlen(s);
 	str = (char *)malloc(sizeof(char) * (len + 1));
