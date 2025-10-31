@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 14:00:31 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 14:11:22 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:19:07 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,3 @@ void	ft_putstr_fd(char *s, int fd)
 	while (*s)
 		write(fd, s++, 1);
 }
-
-// int main()
-// {
-	// ft_putstr_fd("Hello Wolrd!\n", -3);
-// }

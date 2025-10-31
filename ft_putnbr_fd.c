@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 14:20:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 14:49:08 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:18:48 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,3 @@ void	ft_putnbr_fd(int n, int fd)
 	digit = (n % 10) + '0';
 	write(fd, &digit, 1);
 }
-
-// int main()
-// {
-//     ft_putnbr_fd(45678, 1);
-//     write(1, "\n", 1);
-//     ft_putnbr_fd(-45678, 1);
-//     write(1, "\n", 1);
-//     ft_putnbr_fd(0, 1);
-//     write(1, "\n", 1);
-//     ft_putnbr_fd(-2147483648, 1);
-//     write(1, "\n", 1);
-//     return 0;
-// }

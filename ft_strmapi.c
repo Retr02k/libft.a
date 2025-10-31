@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 17:09:45 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 12:31:12 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 15:17:05 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,4 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 		i++;
 	}
 	return (str);
-}
-
-int main()
-{
-	
 }
