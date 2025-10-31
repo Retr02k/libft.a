@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 16:51:48 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 18:26:14 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <stdint.h>
 # include <string.h>
+# include <limits.h>
 
 int			ft_atoi(const char *str);
 void		ft_bzero(void *s, size_t n);

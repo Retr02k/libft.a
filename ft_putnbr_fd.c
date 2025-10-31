@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 14:20:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 15:18:48 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/10/31 18:37:33 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,26 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	digit;
+	int		i;
+	long	num;
+	char	buffer[12];
 
-	if (n == -2147483648)
-	{
-		write(fd, "-2147483648", 11);
+	if (fd < 0)
 		return ;
-	}
-	if (n < 0)
+	num = n;
+	if (num < 0)
 	{
 		write(fd, "-", 1);
-		n *= -1;
+		num = -num;
 	}
-	if (n > 9)
-		ft_putnbr_fd(n / 10, fd);
-	digit = (n % 10) + '0';
-	write(fd, &digit, 1);
+	i = 0;
+	if (num == 0)
+		buffer[i++] = '0';
+	while (num > 0)
+	{
+		buffer[i++] = (num % 10) + '0';
+		num /= 10;
+	}
+	while (--i >= 0)
+		write(fd, &buffer[i], 1);
 }
