@@ -117,3 +117,11 @@ fclean: clean
 	rm -fr libft.a
 	 
 re: fclean all
+
+# Test rule for ft_striteri
+test_striteri: ft_striteri.o ft_strlen.o
+	cc $(CFLAGS) -o test_striteri test_striteri.c ft_striteri.o ft_strlen.o
+	./test_striteri
+
+ft_striteri.o: ft_striteri.c libft.h
+	cc $(CFLAGS) -c -o $@ $<
