@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/01 09:28:53 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 15:45:21 by psilva-p         ###   ########.fr       */
+/*   Created: 2025/11/04 15:34:10 by psilva-p          #+#    #+#             */
+/*   Updated: 2025/11/04 15:47:31 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*temp;
-	if (!lst)
-		return (NULL);
+	t_list *temp;
+
+	if (!lst || !f)
+		return ;
 	temp = lst;
-	while (temp->next)
+	while (temp)
+	{
+		f(temp->content);
 		temp = temp->next;
-	return(temp);
+	}
 }
