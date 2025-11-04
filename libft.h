@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 17:42:16 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 18:32:11 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/04 18:36:48 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,11 +54,10 @@ char		*ft_strnstr(const char *big, const char *little, size_t len);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
-
 
 #endif

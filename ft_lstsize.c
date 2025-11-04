@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 09:18:02 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/01 09:28:31 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/04 18:36:22 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	counter;
+	int		counter;
 	t_list	*temp_lst;
 
 	if (!lst)
