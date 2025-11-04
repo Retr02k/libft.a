@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 20:21:55 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 20:01:42 by psilva-p         ###   ########.fr       */
+/*   Created: 2025/11/04 19:27:34 by psilva-p          #+#    #+#             */
+/*   Updated: 2025/11/04 20:09:05 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-const char	*ft_strrchr(const char *s, int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const char	*str;
-	int			length;
+	size_t			i;
+	unsigned char	*str1;
+	unsigned char	*str2;
 
-	length = ft_strlen(s);
-	str = s + length;
-	while (str >= s)
+	i = 0;
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	while (i < n)
 	{
-		if (*str == (char) c)
-			return (str);
-		str--;
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
+		i++;
 	}
 	return (0);
 }
-
-// int main()
-// {
-// 	char	str[] = "hello world!";
-// 	int		i = 'h';
-
-// 	printf("%s\n", ft_strrchr(str, i));
-// }

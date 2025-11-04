@@ -1,127 +1,37 @@
 NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra
 
+SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
+	ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c \
+	ft_memset.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c \
+	ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
+	ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c \
+	ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
+
+BONUS_SRCS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c \
+			ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
+
+OBJS = $(SRCS:.c=.o)
+
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+
+.PHONY: all clean fclean re bonus
 
 all: $(NAME)
 
-$(NAME): ft_atoi.o\
-		 ft_bzero.o\
-		 ft_calloc.o\
-		 ft_isalnum.o\
-		 ft_isalpha.o\
-		 ft_isascii.o\
-		 ft_isdigit.o\
-		 ft_isprint.o\
-		 ft_memcpy.o\
-		 ft_memmove.o\
-		 ft_memset.o\
-		 ft_split.o\
-		 ft_strchr.o\
-		 ft_strdup.o\
-		 ft_strjoin.o\
-		 ft_strlcat.o\
-		 ft_strlcpy.o\
-		 ft_strlen.o\
-		 ft_strncmp.o\
-		 ft_strnstr.o\
-		 ft_strrchr.o\
-		 ft_strtrim.o\
-		 ft_substr.o\
-		 ft_tolower.o\
-		 ft_toupper.o\
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
-ft_atoi.o: ft_atoi.c libft.h
+%.o: %.c libft.h
 	cc $(CFLAGS) -c -o $@ $<
-
-ft_bzero.o: ft_bzero.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_calloc.o: ft_calloc.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_isalnum.o: ft_isalnum.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-	
-ft_isalpha.o: ft_isalpha.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_isascii.o: ft_isascii.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_isdigit.o: ft_isdigit.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_isprint.o: ft_isprint.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_memcpy.o: ft_memcpy.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_memmove.o: ft_memmove.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_memset.o: ft_memset.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_split.o: ft_split.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strchr.o: ft_strchr.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strdup.o: ft_strdup.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strjoin.o: ft_strjoin.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strlcat.o: ft_strlcat.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strlcpy.o: ft_strlcpy.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strlen.o: ft_strlen.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strncmp.o: ft_strncmp.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strnstr.o: ft_strnstr.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strrchr.o: ft_strrchr.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_strtrim.o: ft_strtrim.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_substr.o: ft_substr.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_tolower.o: ft_tolower.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-ft_toupper.o: ft_toupper.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
-
-run:
-	cc -Wall -Werror -Wextra $(NAME)
-	valgrind ./a.out
 
 clean:
-	rm -fr *.o
-	rm -fr ./a.out
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-	rm -fr libft.a
-	 
+	rm -f $(NAME)
+
 re: fclean all
 
-# Test rule for ft_striteri
-test_striteri: ft_striteri.o ft_strlen.o
-	cc $(CFLAGS) -o test_striteri test_striteri.c ft_striteri.o ft_strlen.o
-	./test_striteri
-
-ft_striteri.o: ft_striteri.c libft.h
-	cc $(CFLAGS) -c -o $@ $<
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)

@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 14:08:29 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 18:51:11 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/04 19:04:58 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ void	ft_putendl_fd(char *s, int fd)
 		return ;
 	while (*s)
 		write(fd, s++, 1);
-	write(fd, '\n', 1);
+	write(fd, "\n", 1);
 }

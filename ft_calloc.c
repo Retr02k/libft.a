@@ -6,12 +6,11 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:08:42 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 15:51:58 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/04 20:00:55 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#define SIZE 10
 
 void	*ft_calloc(size_t	nmemb, size_t	size)
 {
@@ -24,8 +23,7 @@ void	*ft_calloc(size_t	nmemb, size_t	size)
 	mem = malloc(total);
 	if (!mem)
 		return (NULL);
-	if (total)
-		ft_bzero(mem, total);
+	ft_bzero(mem, total);
 	return (mem);
 }
 
