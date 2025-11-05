@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 19:08:30 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 18:35:56 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:11:19 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,12 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
+
+// int main()
+// {
+// 	t_list *node = ft_lstnew("Hello");
+// 	printf("content: %s\n", (char *)node->content);
+// 	printf("Next: %s\n", node->next ? "NOT NULL" : "NULL");
+// 	free(node);
+// 	return 0;
+// }
