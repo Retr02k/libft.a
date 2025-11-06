@@ -6,13 +6,13 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 19:53:46 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 20:01:24 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/06 17:01:55 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-const char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{

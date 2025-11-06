@@ -6,13 +6,13 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 20:21:55 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 20:01:42 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/06 17:02:00 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-const char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	const char	*str;
 	int			length;
