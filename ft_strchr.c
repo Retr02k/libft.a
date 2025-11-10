@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 19:53:46 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/06 17:01:55 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/10 18:48:15 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ char	*ft_strchr(const char *s, int c)
 	while (*s)
 	{
 		if (*s == (char) c)
-			return (s);
+			return ((char *)s);
 		s++;
 	}
 	if ((char) c == '\0')
-		return (s);
+		return ((char *)s);
 	return (0);
 }
 
