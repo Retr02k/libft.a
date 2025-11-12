@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:41:33 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 17:40:05 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:55:23 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,3 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	ft_memcpy(str + len1, (void *)s2, len2);
 	return (str);
 }
-
-// int main()
-// {
-// 	const char	s1[] = "Hello ";
-// 	const char	s2[] = "World!";
-
-// 	char	*str = ft_strjoin(s1, s2);
-// 	printf("%s\n", str);
-// 	free(str);
-// }

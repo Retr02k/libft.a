@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 15:11:19 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 20:35:27 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:53:14 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,3 @@ int	ft_atoi(const char	*str)
 	}
 	return (result * sign);
 }
-
-// int main()
-// {
-// 	char	str[] = "    123ab456   ";
-// 	printf("%i\n", ft_atoi(str));
-// }

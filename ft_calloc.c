@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:08:42 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/04 20:00:55 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:53:25 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,24 +26,3 @@ void	*ft_calloc(size_t	nmemb, size_t	size)
 	ft_bzero(mem, total);
 	return (mem);
 }
-
-// int main()
-// {
-// 	size_t	n = 5;
-// 	//size_t	i = 0;
-// 	int *arr = ft_calloc(n, 0);
-
-// 	if (arr == NULL)
-// 	{
-// 		printf("Memory allocation failed\n");
-// 		return (1);
-// 	}
-// 	// i = 0;
-// 	// while (i < n)
-// 	// {
-// 	// 	printf("arr[%lu] = %d\n", i, arr[i]);
-// 	// 	i++;
-// 	// }
-// 	// free(arr);
-// 	return (0);
-// }

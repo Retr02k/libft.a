@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 20:21:55 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/10 18:49:41 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:55:43 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-// int main()
-// {
-// 	char	str[] = "hello world!";
-// 	int		i = 'h';
-
-// 	printf("%s\n", ft_strrchr(str, i));
-// }

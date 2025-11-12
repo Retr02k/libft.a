@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 18:52:13 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/27 18:41:01 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:55:51 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (sub);
 }
-
-// int main()
-// {
-// 	char	s[] = "hello world!";
-// 	char	*str;
-// 	(void)s;
-// 	str = ft_substr(NULL, 6, 14);
-// 	printf("%s\n", str);
-// 	free(str);
-// 	return (0);
-// }

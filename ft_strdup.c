@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 18:25:25 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 15:52:12 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:55:13 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ char	*ft_strdup(const char	*s)
 	str[i] = '\0';
 	return (str);
 }
-
-// int main()
-// {
-// 	const char	s1[] = "hello world!";
-// 	char		*dup = ft_strdup(s1);
-
-// 	printf("%s\n", dup);
-// 	free(dup);
-// 	return (0);
-// }

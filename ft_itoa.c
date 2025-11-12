@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 21:49:11 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 18:03:50 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:53:42 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,19 +80,3 @@ char	*ft_itoa(int n)
 	fill_string(str, n, size - 2, is_negative);
 	return (str);
 }
-/* 
-int main()
-{
-	char	*n = ft_itoa(123);
-	char	*n2 = ft_itoa(7);
-	char	*n3 = ft_itoa(-123984);
-	
-	printf("%s\n", n);
-	printf("%s\n", n2);
-	printf("%s\n", n3);
-
-	free(n);
-	free(n2);
-	free(n3);
-}
-*/

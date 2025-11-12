@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 16:41:52 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 15:19:45 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:55:06 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,30 +86,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (result);
 }
-/*
-int main()
-{
-	char	s[] = "   Hello World!  ";
-	char	c = ' ';
-	char	**result;
-	int		i;
-	
-	result = ft_split(s, c);
-	if (!result)
-		return (1);
-	
-	i = 0;
-	while (result[i])
-	{
-		printf("Word %d: '%s'\n", i, result[i]);
-		i++;
-	}
-	
-	i = 0;
-	while (result[i])
-		free(result[i++]);
-	free(result);
-	
-	return (0);
-}
-*/

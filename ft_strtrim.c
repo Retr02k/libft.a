@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:48:01 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 17:53:21 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:55:46 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	ft_strlcpy(trm_str, &s1[start], length);
 	return (trm_str);
 }
-
-// int main()
-// {
-// 	char	s1[] = "llllHello World!lll";
-// 	char	set[] = "l";
-// 	char	*str = ft_strtrim(s1, set);
-// 	printf("%s\n", str);
-// 	free(str);
-// }

@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 19:04:58 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/10/31 15:51:47 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:54:50 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,28 +34,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(dest, src, n);
 	return (dest);
 }
-
-// int main()
-// {
-// 	char mem[SIZE];
-// 	char mem2[SIZE];
-// 	printf("mem = %p\n", &mem);
-// 	printf("mem2 = %p\n", &mem2);
-// 	int ctd = 0;
-
-// 	while (ctd < SIZE) {
-// 		mem[ctd] = ctd;
-// 		ctd++;
-// 	}
-// 	ctd = 0;
-// 	while (ctd < SIZE) {
-// 		printf("c[%d] = %d\n",ctd, (int)mem[ctd]);
-// 		ctd++;
-// 	}
-// 	ctd = 0;
-// 	ft_memmove(mem2, mem, SIZE);
-// 	while (ctd < SIZE) {
-// 		printf("c[%d] = %d\n",ctd, (int)mem2[ctd]);
-// 		ctd++;
-// 	}
-// }
