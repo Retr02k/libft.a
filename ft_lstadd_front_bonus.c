@@ -6,7 +6,7 @@
 /*   By: psilva-p <psilva-p@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 21:03:55 by psilva-p          #+#    #+#             */
-/*   Updated: 2025/11/12 16:53:55 by psilva-p         ###   ########.fr       */
+/*   Updated: 2025/11/15 18:36:00 by psilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_front(t_list	**lst, t_list *new)
 {
-	if (!new)
+	if (!new || !lst)
 		return ;
 	new->next = *lst;
 	*lst = new;
